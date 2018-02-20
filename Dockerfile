@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ENV CEREBRO_VERSION=0.6.8
+ENV CEREBRO_VERSION=0.7.2
 ADD https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz /usr/local/
 
 RUN mkdir -p /opt/cerebro && \ 
